@@ -1,0 +1,42 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "fullstack": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "frontend": "cd frontend &&  npm run dev",
+    "backend": "nodemon backend/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.2.1",
+    "bcryptjs": "^3.0.3",
+    "body-parser": "^2.2.2",
+    "cloudinary": "^2.9.0",
+    "concurrently": "^9.2.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "express-fileupload": "^1.5.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.2.3",
+    "multer": "^2.1.0",
+    "nodemailer": "^8.0.1",
+    "nodemon": "^3.1.14",
+    "otp-generator": "^4.0.1",
+    "razorpay": "^2.9.6",
+    "react-dropzone": "^15.0.0",
+    "react-hook-form": "^7.71.2",
+    "react-lazy-load-image-component": "^1.6.3",
+    "react-otp-input": "^3.1.1",
+    "react-player": "^3.4.0",
+    "react-super-responsive-table": "^6.0.2",
+    "tailwindcss": "^4.2.1"
+  }
+}

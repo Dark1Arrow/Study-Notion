@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+body{
+  color: white;
+  background-color: black;
+}
+
+.custom-loader {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: conic-gradient(#0000 15%, #ffffff);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: s3 0.6s infinite linear;
+}
+
+.lable-style {
+  @apply text-[14px] text-gray-50;
+}
+
+.form-style {
+  @apply rounded-lg bg-gray-700 p-3 text-[16px] leading-[24px] text-gray-50 shadow-[0_1px_0_0] shadow-white/30 placeholder:text-gray-400 focus:outline-none;
+}
+
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background-color: #0a2955;
+  background-color: rgb(44 51 63 / 1);
+}
+
+.skeleton::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(90deg,
+      rgba(111, 119, 131, 0) 0,
+      rgba(143, 132, 132, 0) 20%,
+      rgba(126, 139, 151, 0.5) 60%,
+      rgba(25, 55, 99, 0));
+  animation: shimmer 0.9s infinite;
+  content: "";
+}
